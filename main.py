@@ -29,7 +29,7 @@ app.add_middleware(
 )
 
 
-@app.post('/api/predict')
+@app.post('/predict')
 async def predict(data:parameter):
     data  = data.model_dump()
     age = data['age'] 
